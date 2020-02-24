@@ -2,7 +2,7 @@
 Implementation of the Adaptive Contextual Combinatorial Upper Confidence Bound (ACC-UCB) algorithm for the contextual combinatorial volatile multi-armed bandit setting.
 
 # How to run
-The main script is the "main.py" file. Depending on the setting of the "use_generated_workers_in_paper" parameter, it will either run the simulations using the arm-pairs used in the paper simulation (saved in the "simulation_df" file), or it will generate the arm-pairs (i.e., workers) from the Gowalla dataset as explained in the paper, and then run the simulations. In other words, by setting the "use_generated_workers_in_paper" to True, you will get the results presented in the paper.
+First, extract the "simulation_df" file from the "simulation_df.zip" file. Then, depending on the setting of the "use_generated_workers_in_paper" parameter in the "main.py" script, the script will either run the simulations using the arm-pairs used in the paper simulation (saved in the "simulation_df" file), or it will generate the arm-pairs (i.e., workers) from the Gowalla dataset as explained in the paper, and then run the simulations. In other words, by setting the "use_generated_workers_in_paper" to True, you will get the results presented in the paper.
 
 Note that if you set "use_generated_workers_in_paper" to False and want to run the simulations from scratch, then the Gowalla checkins txt file must be downloaded to the same directory as the script and saved as "Gowalla_totalCheckins.txt". Then, the "gowallaLoader.py" script MUST BE RUN before the "main.py" file. The checkins txt file can be downloaded from the following link:
 https://snap.stanford.edu/data/loc-Gowalla.html.
